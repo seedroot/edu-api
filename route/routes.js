@@ -6,6 +6,6 @@ router.route('/')
 		res.send('Welcome to edu-duniya api server');
 	});
 
-require('./institue')(router);
+require('./institute')(router);
 
 module.exports = router;

@@ -37,8 +37,8 @@ instituteSchema.pre('save', function(next) {
 
 	// change the updated_at field to current date
 	obj.updated_at = currentDate;
-	obj.is_deleted = false;
-	obj.deleted_dt = null;
+	/*obj.is_deleted = false;
+	obj.deleted_dt = null;*/
 
 	// if created_at doesn't exist, add to that field
 	if (!obj.created_at){
@@ -46,9 +46,9 @@ instituteSchema.pre('save', function(next) {
 	}
 
 	//insert default values
-	obj.is_approved = false;
+	/*obj.is_approved = false;
 	obj.approved_by = null;
-	obj.approval_date = null;
+	obj.approval_date = null;*/
 
 	next();
 });
